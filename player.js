@@ -25,8 +25,9 @@ class Player {
  
 
   draw() {
-    fill("turquoise");
-      rect(this.x, this.y, this.size,this.size);
+    // fill("turquoise");
+      // rect(this.x, this.y, this.size,this.size);
+       image(diver,this.x, this.y, this.size,this.size);
   }
 
 }

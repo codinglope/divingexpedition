@@ -3,24 +3,28 @@ const player1 = new Player(0, 0, 50);
 let bg;
 let bg2;
 let x1 = 0;
-let x2;
+let x2 = 1000;
 const scrollSpeed = 2 ;
 const fish = new Fish(1000,250, 30);
 const fish2 = new Fish(1000, 100, 10);
 const fish3 = new Fish(1000,300,20);
-// let song;
+const fish4 = new Fish(1000,300, 25);
+// let diver;
+let song;
 
-// function preload() {
-  // song = loadSound("assets/salt.mp3");
-// }
+ function preload() {
+ song = loadSound("assets/salt.mp3.mp3");
+}
 
 function setup() {
   let canvas = createCanvas(1000,500);
-  // song.loop();
+ 
+  song.loop();
   canvas.parent("canvas");
   avatar = loadImage('assets/diver2.jpg');
   bg = loadImage("assets/bg.jpg");
-  bg2= loadImage("assets/bg2.jpg");
+  bg2 = loadImage("assets/bg2.jpg");
+  diver = loadImage("assets/diver2.jpg");
   x2 = innerWidth;
 }
 
@@ -37,6 +41,8 @@ function draw() {
   fish2.move();
   fish3.draw();
   fish3.move();
+  fish4.draw();
+  fish4.move();
   
 
 

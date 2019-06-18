@@ -1,5 +1,7 @@
 class Game {
-
+constructor(){
+  
+}
   // drawGrid() {
 
   //   var size = 50;

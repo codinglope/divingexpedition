@@ -9,8 +9,9 @@ class Fish {
 }
 
 move() {
-  if(this.x > 0) {
-    this.x -= scrollSpeed * this.size/20; //parallax
+  this.x -= 2 * this.size/20; //parallax
+  if(this.x <= 0) {
+    this.x = 1000;
 }}
 
 
